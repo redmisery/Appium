@@ -1,0 +1,2 @@
+im.thebot.messenger.beta
+adb push git_for_autotest.gif /sdcard/DCIM/Camera/ && adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/DCIM/Camera/git_for_autotest.gif

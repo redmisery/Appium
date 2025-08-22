@@ -1,0 +1,67 @@
+自动化试题
+
+1. Which Linux command(s) can you use to transfer files between different Linux servers?
+    Please write complete sentence (s) for the command (s) you gave as example (s).
+    answer: rsync -avz /path user@remote_ip /path
+
+2. git checkout
+    Give us an example how you checkout a git branch named "price limitation"
+    Please provide your answer in the following editor
+    answer: 
+        # 中文回答：如何切换到名为"price limitation"的git分支
+        
+        # 1. 首先查看当前仓库状态
+        git status
+        
+        # 2. 查看所有分支（包括远程分支）
+        git branch -a
+        
+        # 3. 切换到"price limitation"分支
+        git checkout "price limitation"
+        
+        # 如果分支不存在于本地，但存在于远程仓库，可以使用：
+        git checkout -b "price limitation" origin/"price limitation"
+        
+        # 或者使用新的git switch命令（Git 2.23+）：
+        git switch "price limitation"
+
+3. Web Element Location
+    Please visit below page,https://www.hkex.com.hk/?sclang=en
+    answer:
+        python code:
+        from selenium import webdriver
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import webDriverWait
+
+        driver = webdriver.Chrome()
+        driver.get("https://www.hkex.com.hk/?sclang=en")
+
+        wait = webDriverWait(dirver,10)
+        element = driver.find_element(By.xpath,"")
+
+
+
+Please write the ways you know how to locate the highlight element
+please provide valid value for your location methods, like:
+method: by xxxValUe：********
+
+Forms
+The requirement is to select the dropdown and choose "Europe" from the given form.
+First name.
+Last name:
+Sex:O Male O Female
+Years of Experience:01 02 03 04 05 06 07
+ How to merge multiple files into one?
+by Linux command, and give us example(s).
+Please provide your answer in the following editor
+
+Linux with regular expression
+1. List all txt files that start with "OMD" and end with number(s). e.g."OMD Sample Test 01.txt'
+2. Modify the "time-stamp" in the file content of all txt files in current folder to "timestamp'Please provide your answer in the following editor
+
+selenium XPath
+Which of the following XPath expressions finds all ReCAPTCHA input elements on the page?Note: The ReCAPTCHA input elements have g-recaptcha-response in the lD attribute.Pick ONE option
+)//*[@id='g-recaptcha-response]
+)//input[@id='g-recaptcha-response']
+)/html/body/input[@id='g-recaptcha-response"1
+)/html/body/*[@id='g-recaptcha-response"]
